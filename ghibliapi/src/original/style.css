@@ -1,0 +1,45 @@
+/* PANEL INTERNO (si quieres estilos específicos del componente) */
+.pelicula {
+  margin-top: 20px;
+  animation: aparecer 0.5s ease;
+}
+
+/* IMAGEN SOLO DEL COMPONENTE */
+.pelicula img {
+  margin-top: 15px;
+  border-radius: 15px;
+
+  max-width: 100%;
+  height: auto;
+
+  box-shadow:
+    6px 6px 12px #c5c7d3,
+    -6px -6px 12px #ffffff;
+}
+
+/* TEXTO */
+.pelicula h3 {
+  color: #333;
+}
+
+.pelicula p {
+  color: #444;
+}
+
+/* DESCRIPCION */
+.descripcion {
+  max-width: 600px;
+  margin: auto;
+}
+
+/* ANIMACION */
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
